@@ -1,0 +1,30 @@
+<div class="home-wrapper">
+  <app-add-product></app-add-product>
+  <div class="product-list-wrapper">
+    <h6 class="sub-heading">All Products:</h6>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of productList">
+          <td [routerLink]="['/product-details', product.id]">{{ product }}</td>
+          <td [routerLink]="['/product-details', product.id]">{{ product.name }}</td>
+          <td [routerLink]="['/product-details', product.id]">{{ product.price }} <span>&#8377;</span></td>
+          <td [routerLink]="['/product-details', product.id]">{{ product.description }}</td>
+          <td class="text-center">
+            <button type="button" class="close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
