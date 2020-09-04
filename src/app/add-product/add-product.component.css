@@ -1,0 +1,26 @@
+.row {
+    margin:15px 0;
+  }
+  label {
+    margin-bottom: 0;
+    margin-left: 1px;
+  }
+  .file {
+    visibility: hidden;
+    position: absolute;
+  }
+  .form-field-box {
+    margin-bottom: 0.5rem;
+  }
+ .btn-gray {
+    background: #000000;
+    border: 1px solid #565656;
+    width: 110px;
+    color: #ffffff;
+}
+textarea {
+    resize: none;
+}
+.sub-heading{
+    margin: 1em;
+}
